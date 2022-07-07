@@ -17,6 +17,5 @@ code {
 }
 
 .bg-dark {
-  --bs-bg-opacity: 1;
   background-color: #055160 !important;
 }
