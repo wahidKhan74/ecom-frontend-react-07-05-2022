@@ -1,19 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-import Hello from './components/Hello';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import Products from './components/Products';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import { About } from './components/About';
+import { Blogs } from './components/Blogs';
+import NotFound from './components/NotFound';
+import Dashboard from './components/Dashboard';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
     <div className="container">
-      <Header />
-      <Navbar />
-      {/* <Hello name="John Snow" />  */}
-      <Products />
-      <Footer />
+      
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/"  element={ <Layout /> } >
+            <Route index element={ <Dashboard />} />
+            <Route path="about-us" element={ <About />} />
+            <Route path="blogs" element={ <Blogs />} />
+            <Route path="contact" element={< ContactUs /> } />
+            <Route path="products" element={< Products /> } />
+            <Route path="*" element={< NotFound /> } />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
