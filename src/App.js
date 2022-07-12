@@ -7,6 +7,7 @@ import { Blogs } from './components/Blogs';
 import NotFound from './components/NotFound';
 import Dashboard from './components/Dashboard';
 import ContactUs from './components/ContactUs';
+import { Likes } from './components/Likes';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="blogs" element={ <Blogs />} />
             <Route path="contact" element={< ContactUs /> } />
             <Route path="products" element={< Products /> } />
+            <Route path="likes" element={ <Likes />} />
             <Route path="*" element={< NotFound /> } />
           </Route>
         </Routes>
