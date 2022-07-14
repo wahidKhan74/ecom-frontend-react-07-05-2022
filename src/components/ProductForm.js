@@ -19,10 +19,22 @@ export default class ProductForm extends Component {
         }
     }
 
+     // after update in component
+    componentDidUpdate(prevProps) {
+        // console.log(this.props.product);
+        if(this.props.product !== null && this.props.product !== prevProps.product){
+            this.setState({ product : this.props.product });
+        }        
+    }
+
+
     // handle form submit
     handleFormSubmit(event) {
         event.preventDefault();
-        console.log("This : ", this);
+        // console.log("This : ", this);
+        this.props.onHandleProduct(this.state.product);
+        //after submit form make form empty fields
+        this.setState({ product : {id: 0,title: '', body: '', price: '',category: ''}})
     }
 
     handleTitleChange = (e) => {
@@ -81,8 +93,8 @@ export default class ProductForm extends Component {
                                     <option value=""></option>
                                     {this.renderCategories()}
                                 </select>
-                            </div>
-                            <button type="submit" className="btn btn-primary">Save</button>
+                            </div><br/><br/>
+                            <button type="submit" className="btn btn-primary btn-block">{(this.state.product.id > 0 )?'Update' :'Save'}</button>
                         </form>
                     </div>
                 </div>

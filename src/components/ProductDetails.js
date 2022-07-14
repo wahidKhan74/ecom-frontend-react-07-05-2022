@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const ProductDetails = (props) => {
+    // console.log(props);
     return (
         <div className="card bg-light mb-3">
             <h5 className="card-header">{props.product.title}</h5>
@@ -10,7 +11,11 @@ export const ProductDetails = (props) => {
                 <p className="card-text">Category: {props.product.category}</p>
             </div>
             <div className="card-footer">
-                <button className="btn btn-sm btn-outline-danger" type="button">Delete</button>
+                <button className="btn btn-sm btn-outline-info mr-2" type="button"
+                onClick={ ()=> { props.onUpdate(props.product)} }>Update</button>
+
+                <button className="btn btn-sm btn-outline-danger" type="button" 
+                onClick={ ()=> { props.onDelete(props.product.id)}} >Delete</button>
             </div>
         </div>
     )

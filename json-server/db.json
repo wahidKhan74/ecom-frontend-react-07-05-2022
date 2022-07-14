@@ -1,0 +1,89 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "code": "electronics",
+      "name": "Electronics"
+    },
+    {
+      "id": 2,
+      "code": "fashion",
+      "name": "Fashion"
+    },
+    {
+      "id": 3,
+      "code": "homeandkitchen",
+      "name": "Home & Kitchen"
+    },
+    {
+      "id": 4,
+      "code": "books",
+      "name": "Books"
+    }
+  ],
+  "products": [
+    {
+      "id": 2,
+      "title": "iPhone 11",
+      "body": "An apple mobile which is nothing like apple",
+      "price": 749,
+      "brand": "Apple",
+      "rating": 4.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 4,
+      "title": "Dell Vostro 3400 Intel i3-1115G4 14 inches(35cm)",
+      "body": "Free upgrade to Windows 11 when available. Disclaimer-Upgrade rollout plan is being finalized and is scheduled to begin late in 2021 and continue into 2022. Specific timing will vary by device",
+      "price": "36480.00",
+      "category": "electronics"
+    },
+    {
+      "id": 5,
+      "title": "Acer Aspire Vero AV15-51-5155 Green Laptop | 15.6\" FHD",
+      "body": "Great performance meets long battery life with the Intel Core i5-1155G7 Processor - up to 4.50 GHz, 4 cores, 8 threads, 8 MB Intel Smart Cache and up to 10 hours battery life.",
+      "price": "54990.00",
+      "category": "electronics"
+    },
+    {
+      "id": 6,
+      "title": "Hp 15SQ - 11Th Gen Intel Core I5 -8Gb Ram- 512Gb",
+      "body": "Processor: Intel Core i5-1155G7 (up to 4.5 GHz with Intel Turbo Boost Technology(2g),8 MB L3 cache, 4 cores,8 threads)| Memory: 8 GB DDR4-3200 MHz RAM (2 x 4 GB), Upto 16 GB DDR4-3200 MHz RAM (2 x 8 GB)| Storage: 512 GB",
+      "price": "50999.00",
+      "category": "electronics"
+    },
+    {
+      "id": 7,
+      "title": "boAt Airdopes 141 42H Playtime, Beast Mode ENx Tech, ASAP Charge",
+      "body": "Song Playback- Enjoy an extended break on weekends with your favourite episodes on stream, virtue of a playback time of up to 42 hours including the 6 hours nonstop playtime for earbuds.",
+      "price": "55399.00",
+      "category": "electronics"
+    }
+  ],
+  "users": [
+    {
+      "id": 100,
+      "name": "johnsmith",
+      "email": "john@gmail.com",
+      "password": "john@123",
+      "address": {
+        "id": 100,
+        "street": "JK Street",
+        "pincode": 343433,
+        "city": "NewYork"
+      }
+    },
+    {
+      "id": 101,
+      "name": "marrysmith",
+      "email": "marry@gmail.com",
+      "password": "marry@123",
+      "address": {
+        "id": 101,
+        "street": "JK Street",
+        "pincode": 343433,
+        "city": "NewYork"
+      }
+    }
+  ]
+}
